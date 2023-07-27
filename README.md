@@ -1,12 +1,14 @@
-## Getting Started
+## Reverse Polish Calculator Developed with TDD
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This project was performed implementing TDD through JUnit testing tools. The reverse polish calculator invokes a stack to create a list of values to perform operations on. This is beneficial because users are able to view the collection of values they are working with as opposed to the result from the previous operation.
 
 ## Folder Structure
 
-The workspace contains two folders by default, where:
+The workspace contains multiple folders:
 
 - `src`: the folder to maintain sources
+  - `main`: the folder containing the logic of the calculator.
+  - `test`: the folder containing the tests used to develop the logic.
 - `lib`: the folder to maintain dependencies
 
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
