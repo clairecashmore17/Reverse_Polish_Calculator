@@ -36,6 +36,8 @@ public class Calculator {
             operation = new MultiplyOperation();
         else if("/".equals(op))
             operation = new DivideOperation();
+        else if("^2".equals(op))
+            operation = new SquareOperation();
         operation.apply(values);
     }
 

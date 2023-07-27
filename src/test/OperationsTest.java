@@ -41,4 +41,11 @@ public class OperationsTest {
         calculator.execute("/");
         assertEquals(new BigDecimal(5), calculator.getAccumulator());
     }
+
+    // Unary Test
+    @Test
+    public void testSquaredExecution(){
+        calculator.execute("^2");
+        assertEquals(new BigDecimal(16), calculator.getAccumulator());
+    }
 }
