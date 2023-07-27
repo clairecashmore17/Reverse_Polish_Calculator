@@ -21,15 +21,24 @@ public class OperationsTest {
     }
 
     @Test
-    public void testAdd(){
-        calculator.add();
+    public void testAddExectuion(){
+        calculator.execute("+");
         assertEquals(new BigDecimal(24), calculator.getAccumulator());
     }
-
-    @Test
-    public void testSubtract(){
-        calculator.subtract();
+      @Test
+    public void testSubtractExectuion(){
+        calculator.execute("-");
         assertEquals(new BigDecimal(16), calculator.getAccumulator());
     }
-
+    // Multiply & Divide tests to add
+    @Test
+    public void testMultiplyExecution(){
+        calculator.execute("*");
+        assertEquals(new BigDecimal(80), calculator.getAccumulator());
+    }
+     @Test
+    public void testDivideExecution(){
+        calculator.execute("/");
+        assertEquals(new BigDecimal(5), calculator.getAccumulator());
+    }
 }
